@@ -24,6 +24,11 @@ bullet=pygame.Rect(200,400,5,10)
 bulletspeed=5 
 bulletState="ready"
 
+#Add code to create a variable score and initialize it to 0
+
+#Add code to create fornt for score text.
+
+
 while True:    
     screen.fill((0,0,0))
     screen.blit(background_image,[0,0])
@@ -61,6 +66,7 @@ while True:
             enemy.y=-9000
             enemy.x=-10000
             bullet.y=-10000
+            #Add code to increament the score 
             
         if player.colliderect(enemy):
             player.y=-1000
@@ -74,6 +80,8 @@ while True:
     pygame.draw.rect(screen,(225,225,15),bullet)         
     #pygame.draw.rect(screen,(23,100,100),player)
     screen.blit(player_image,player)
+    
+    #Add code to create score text and display it on the screen.
     
     pygame.display.update()
     clock.tick(30)
